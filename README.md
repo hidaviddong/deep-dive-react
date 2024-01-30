@@ -1,13 +1,11 @@
-# My-FrontEnd-StartUp
+# deep dive react
 
-## Stack
+学习《深入浅出react开发指南》的一些demo
 
-+ 🚀 Framework: React + React Router + TypeScript
-+ 🛠️ Build Tool: Vite
-+ 🧬 State Management: Jotai
-+ 🌐 Data Fetching: React Query + Axios
-+ 🎨 CSS Framework: TailwindCSS + shadcn/ui
-+ 🧑‍⚕️ Tests: Vitest
+## Todo
 
-## How to use
-+ `pnpm install` and `pnpm run dev`
+- [x] 了解jsx
+    - [x] 可控性渲染
+    - [x] 模拟Babel解析JSX
+
+- [ ] React组件
