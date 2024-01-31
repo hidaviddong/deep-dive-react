@@ -10,6 +10,20 @@ export default function Home() {
         <Link to="/controller-render" className="cursor-pointer">
           <Button variant="outline">可控性渲染</Button>
         </Link>
+        <Link to="/render-function" className="cursor-pointer">
+          <Button variant="outline">
+            {`<Component />
+            和Component()的渲染区别`}
+          </Button>
+        </Link>
+
+        <Link to="/static-property" className="cursor-pointer">
+          <Button variant="outline">静态属性</Button>
+        </Link>
+
+        <Link to="/event-bus" className="cursor-pointer">
+          <Button variant="outline">事件总线</Button>
+        </Link>
       </div>
     </div>
   )
