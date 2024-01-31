@@ -22,7 +22,7 @@ export default function Home() {
         </Link>
 
         <Link to="/event-bus" className="cursor-pointer">
-          <Button variant="outline">事件总线</Button>
+          <Button variant="outline">组件通信之事件总线</Button>
         </Link>
       </div>
     </div>

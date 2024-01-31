@@ -10,7 +10,7 @@ export default function ChildComponent(props: React.PropsWithChildren) {
           去首页
         </Button>
       </Link>
-      {props.children}
+      <div className="flex h-full w-full flex-col items-center justify-center">{props.children}</div>
     </>
   )
 }

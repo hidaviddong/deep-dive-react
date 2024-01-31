@@ -2,10 +2,10 @@ import { PropsWithChildren } from 'react'
 
 function Foo(props: PropsWithChildren) {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center">
+    <>
       Foo
       {props.children}
-    </div>
+    </>
   )
 }
 Foo.Item = function () {

@@ -29,7 +29,7 @@ export default function RenderFunction() {
     return <div>Footer</div>
   }
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center">
+    <>
       <p className="text-2xl">打开控制台看：1、re-render高亮情况。2、看React组件树少了些什么？</p>
       <Button
         variant="ghost"
@@ -54,16 +54,6 @@ export default function RenderFunction() {
       {OutHeader()}
       {OutMain()}
       {OutFooter()}
-    </div>
+    </>
   )
 }
-
-// <div className="flex h-full w-full flex-col items-center justify-center">
-// {Header()}
-// </div>
-
-// export default function RenderFunction() {
-//     const Header = () => /*#__PURE__*/React.createElement("div", null, "Header");
-//     return /*#__PURE__*/React.createElement("div", {
-//       className: "flex h-full w-full flex-col items-center justify-center"
-//     }, Header());

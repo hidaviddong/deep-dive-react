@@ -8,12 +8,12 @@ const toLearn = ['vue', 'react', 'solid']
 
 export default function ControllerRender() {
   const Element = (
-    <div className="flex h-full w-full flex-col items-center justify-center">
+    <>
       <p>可控性渲染</p>
       {toLearn.map((item) => (
         <p key={item}>study {item}</p>
       ))}
-    </div>
+    </>
   )
   // 扁平化
   const { children } = Element.props
