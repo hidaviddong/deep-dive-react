@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
 
+// 这种方式的组件通信会造成牵一发而动全身的影响，而且后期难以维护，组件之间的状态也是未知的
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FunctionType = (...params: any[]) => void
 class EventBus {
