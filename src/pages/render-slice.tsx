@@ -53,9 +53,6 @@ const RenderSequence = withSequentialRender(ComponentB, ComponentA, ComponentC)
 export default function RenderSlice() {
   return (
     <div className="grid h-full w-full grid-cols-2 grid-rows-2">
-      {/* <ComponentA />
-      <ComponentB />
-      <ComponentC /> */}
       <RenderSequence />
     </div>
   )
