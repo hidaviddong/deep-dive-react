@@ -24,6 +24,14 @@ export default function Home() {
         <Link to="/event-bus" className="cursor-pointer">
           <Button variant="outline">组件通信之事件总线</Button>
         </Link>
+
+        <Link to="/hoc-props-proxy" className="cursor-pointer">
+          <Button variant="outline">HOC之属性代理</Button>
+        </Link>
+
+        <Link to="/hoc-error-boundary" className="cursor-pointer">
+          <Button variant="outline">HOC之错误边界</Button>
+        </Link>
       </div>
     </div>
   )
