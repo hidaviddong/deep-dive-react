@@ -8,6 +8,7 @@ import HOCErrorBoundary from '@/pages/hoc-error-boundary'
 import HOCPropsProxy from '@/pages/hoc-props-proxy'
 import Home from '@/pages/home'
 import RenderFunction from '@/pages/render-function'
+import RenderSlice from '@/pages/render-slice'
 import StaticProperty from '@/pages/static-property'
 
 export const router = createBrowserRouter([
@@ -62,6 +63,14 @@ export const router = createBrowserRouter([
         <ErrorBoundary fallback={<p>成功捕获错误！</p>}>
           <HOCErrorBoundary />
         </ErrorBoundary>
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/render-slice',
+    element: (
+      <ChildComponent>
+        <RenderSlice />
       </ChildComponent>
     )
   }

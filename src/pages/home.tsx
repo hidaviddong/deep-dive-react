@@ -32,6 +32,10 @@ export default function Home() {
         <Link to="/hoc-error-boundary" className="cursor-pointer">
           <Button variant="outline">HOC之错误边界</Button>
         </Link>
+
+        <Link to="/render-slice" className="cursor-pointer">
+          <Button variant="outline">渲染分片</Button>
+        </Link>
       </div>
     </div>
   )
