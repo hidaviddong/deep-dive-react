@@ -19,7 +19,6 @@ function ComponentB() {
 function ComponentC() {
   return (
     <div className="col-start-2 col-end-3 row-start-2 row-end-3 flex items-center justify-center bg-gray-300">
-      {' '}
       ComponentC Render!
     </div>
   )
