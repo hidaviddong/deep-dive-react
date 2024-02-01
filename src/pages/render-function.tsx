@@ -38,11 +38,11 @@ export default function RenderFunction() {
         }}>
         {counter}
       </Button>
-      <p>表面上看没有重新渲染，但实际上是因为重新创建了一个新的</p>
+      <p>表面上看没有重新渲染，但实际上是因为重新创建了一个新的，所以控制台不会高亮这部分</p>
       <Header />
       <Main />
       <Footer />
-      <p>重新创建了一个</p>
+      <p>同上</p>
       {Header()}
       {Main()}
       {Footer()}
@@ -50,7 +50,7 @@ export default function RenderFunction() {
       <OutHeader />
       <OutMain />
       <OutFooter />
-      <p>重新创建了一个</p>
+      <p>同第一个</p>
       {OutHeader()}
       {OutMain()}
       {OutFooter()}
