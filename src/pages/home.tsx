@@ -50,7 +50,7 @@ export default function Home() {
         </Link>
 
         <Link to="/external-store" className="cursor-pointer">
-          <Button variant="outline">外部数据源</Button>
+          <Button variant="outline">use-external-store</Button>
         </Link>
       </div>
     </div>
