@@ -6,6 +6,8 @@ import ChildComponent from '@/pages/child-component'
 import CompoundPattern from '@/pages/compound-pattern'
 import ControllerRender from '@/pages/controller-render'
 import EventBus from '@/pages/event-bus'
+import ExternalStore from '@/pages/external-store'
+import FlushSync from '@/pages/flush-sync'
 import HOCErrorBoundary from '@/pages/hoc-error-boundary'
 import HOCPropsProxy from '@/pages/hoc-props-proxy'
 import Home from '@/pages/home'
@@ -89,6 +91,22 @@ export const router = createBrowserRouter([
     element: (
       <ChildComponent>
         <BatchUpdate />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/flush-sync',
+    element: (
+      <ChildComponent>
+        <FlushSync />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/external-store',
+    element: (
+      <ChildComponent>
+        <ExternalStore />
       </ChildComponent>
     )
   }

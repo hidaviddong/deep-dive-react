@@ -44,6 +44,14 @@ export default function Home() {
         <Link to="/batch-update" className="cursor-pointer">
           <Button variant="outline">事件循环</Button>
         </Link>
+
+        <Link to="/flush-sync" className="cursor-pointer">
+          <Button variant="outline">改变渲染优先级</Button>
+        </Link>
+
+        <Link to="/external-store" className="cursor-pointer">
+          <Button variant="outline">外部数据源</Button>
+        </Link>
       </div>
     </div>
   )
