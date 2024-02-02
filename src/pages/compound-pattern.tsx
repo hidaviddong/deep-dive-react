@@ -52,12 +52,12 @@ function Toggle() {
 
 function List(props: PropsWithChildren) {
   const context = useContext(FlyOutContext)
-  return (
-    context?.open && (
-      <ul className="absolute top-5 flex flex-col items-center justify-center gap-y-1 rounded-md bg-white p-2">
-        {props.children}
-      </ul>
-    )
+  return context?.open ? (
+    <ul className="absolute top-5 flex flex-col items-center justify-center gap-y-1 rounded-md bg-white p-2">
+      {props.children}
+    </ul>
+  ) : (
+    <></>
   )
 }
 
