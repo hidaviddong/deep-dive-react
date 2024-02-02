@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 
 import ErrorBoundary from '@/components/ui/error-boundary'
+import BatchUpdate from '@/pages/batch-update'
 import ChildComponent from '@/pages/child-component'
 import CompoundPattern from '@/pages/compound-pattern'
 import ControllerRender from '@/pages/controller-render'
@@ -80,6 +81,14 @@ export const router = createBrowserRouter([
     element: (
       <ChildComponent>
         <CompoundPattern />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/batch-update',
+    element: (
+      <ChildComponent>
+        <BatchUpdate />
       </ChildComponent>
     )
   }

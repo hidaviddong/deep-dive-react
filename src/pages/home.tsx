@@ -40,6 +40,10 @@ export default function Home() {
         <Link to="/compound-pattern" className="cursor-pointer">
           <Button variant="outline">组合模式</Button>
         </Link>
+
+        <Link to="/batch-update" className="cursor-pointer">
+          <Button variant="outline">事件循环</Button>
+        </Link>
       </div>
     </div>
   )
