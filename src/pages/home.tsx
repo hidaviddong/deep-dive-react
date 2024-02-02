@@ -36,6 +36,10 @@ export default function Home() {
         <Link to="/render-slice" className="cursor-pointer">
           <Button variant="outline">渲染分片</Button>
         </Link>
+
+        <Link to="/compound-pattern" className="cursor-pointer">
+          <Button variant="outline">组合模式</Button>
+        </Link>
       </div>
     </div>
   )

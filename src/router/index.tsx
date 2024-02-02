@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import ErrorBoundary from '@/components/ui/error-boundary'
 import ChildComponent from '@/pages/child-component'
+import CompoundPattern from '@/pages/compound-pattern'
 import ControllerRender from '@/pages/controller-render'
 import EventBus from '@/pages/event-bus'
 import HOCErrorBoundary from '@/pages/hoc-error-boundary'
@@ -71,6 +72,14 @@ export const router = createBrowserRouter([
     element: (
       <ChildComponent>
         <RenderSlice />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/compound-pattern',
+    element: (
+      <ChildComponent>
+        <CompoundPattern />
       </ChildComponent>
     )
   }
