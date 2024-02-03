@@ -14,6 +14,8 @@ import Home from '@/pages/home'
 import RenderFunction from '@/pages/render-function'
 import RenderSlice from '@/pages/render-slice'
 import StaticProperty from '@/pages/static-property'
+import LayoutEffect from '@/pages/use-layout-effect'
+import VirtualList from '@/pages/virtual-list'
 
 export const router = createBrowserRouter([
   {
@@ -107,6 +109,22 @@ export const router = createBrowserRouter([
     element: (
       <ChildComponent>
         <ExternalStore />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/use-layout-effect',
+    element: (
+      <ChildComponent>
+        <LayoutEffect />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/virtual-list',
+    element: (
+      <ChildComponent>
+        <VirtualList />
       </ChildComponent>
     )
   }
