@@ -62,9 +62,7 @@ const VirtualScroll = ({ itemCount = MAX_ITEM_LENGTH, height = 300, childHeight 
   // height 是容器宽度
   let visibleNodeCount = Math.ceil(height / childHeight) + 2 * renderAhread
   visibleNodeCount = Math.min(itemCount - startNode, visibleNodeCount)
-  console.log(itemCount - startNode, visibleNodeCount)
   const offsetY = startNode * childHeight
-  console.log('offsetY', offsetY)
   const visibleChildren = useMemo(
     () =>
       new Array(visibleNodeCount)
