@@ -1,16 +1,15 @@
 //dev.to/adamklein/build-your-own-virtual-scroll-part-i-11ib
-
+// https://github.com/dwqs/blog/issues/70
 import { memo, useEffect, useMemo, useRef, useState } from 'react'
 const MAX_ITEM_LENGTH = 100000
-const height = 300
 
 export default function VirtualList() {
   return (
-    <div className="bg-gray-100" style={{ height }}>
+    <>
       {/* NormalScroll 在渲染100000数据的时候很卡！ */}
       {/* <NormalScroll /> */}
       <VirtualScroll />
-    </div>
+    </>
   )
 }
 
@@ -60,12 +59,12 @@ const VirtualScroll = ({ itemCount = MAX_ITEM_LENGTH, height = 300, childHeight 
 
   let startNode = Math.floor(scrollTop / childHeight) - renderAhread
   startNode = Math.max(0, startNode)
-
+  // height 是容器宽度
   let visibleNodeCount = Math.ceil(height / childHeight) + 2 * renderAhread
   visibleNodeCount = Math.min(itemCount - startNode, visibleNodeCount)
   console.log(itemCount - startNode, visibleNodeCount)
   const offsetY = startNode * childHeight
-
+  console.log('offsetY', offsetY)
   const visibleChildren = useMemo(
     () =>
       new Array(visibleNodeCount)
