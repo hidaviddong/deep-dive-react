@@ -18,3 +18,4 @@
 - [x] use-external-store
 - [x] use-layout-effect
 - [x] 虚拟列表
+- [x] echarts with useRef
