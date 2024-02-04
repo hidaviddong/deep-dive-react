@@ -5,9 +5,11 @@ import BatchUpdate from '@/pages/batch-update'
 import ChildComponent from '@/pages/child-component'
 import CompoundPattern from '@/pages/compound-pattern'
 import ControllerRender from '@/pages/controller-render'
+import EchartRef from '@/pages/echart-ref'
 import EventBus from '@/pages/event-bus'
 import ExternalStore from '@/pages/external-store'
 import FlushSync from '@/pages/flush-sync'
+import ForwardRefExample from '@/pages/forward-ref'
 import HOCErrorBoundary from '@/pages/hoc-error-boundary'
 import HOCPropsProxy from '@/pages/hoc-props-proxy'
 import Home from '@/pages/home'
@@ -125,6 +127,22 @@ export const router = createBrowserRouter([
     element: (
       <ChildComponent>
         <VirtualList />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/forward-ref',
+    element: (
+      <ChildComponent>
+        <ForwardRefExample />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/echart-ref',
+    element: (
+      <ChildComponent>
+        <EchartRef />
       </ChildComponent>
     )
   }

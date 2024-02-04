@@ -20,6 +20,7 @@
     "axios": "^1.6.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "echarts": "^5.4.3",
     "jotai": "^2.4.3",
     "lucide-react": "^0.288.0",
     "react": "^18.2.0",

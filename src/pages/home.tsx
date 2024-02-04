@@ -16,7 +16,9 @@ const routes = [
   { path: '/flush-sync', label: '改变渲染优先级' },
   { path: '/external-store', label: 'useExternalStore' },
   { path: '/use-layout-effect', label: 'useLayoutEffect' },
-  { path: '/virtual-list', label: '虚拟列表' }
+  { path: '/virtual-list', label: '虚拟列表' },
+  { path: '/forward-ref', label: 'forwardRef' },
+  { path: '/echart-ref', label: 'echart-ref' }
 ]
 
 export default function Home() {
