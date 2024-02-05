@@ -6,6 +6,7 @@ import ChildComponent from '@/pages/child-component'
 import CompoundPattern from '@/pages/compound-pattern'
 import ControllerRender from '@/pages/controller-render'
 import EchartRef from '@/pages/echart-ref'
+import Event from '@/pages/event'
 import EventBus from '@/pages/event-bus'
 import ExternalStore from '@/pages/external-store'
 import FlushSync from '@/pages/flush-sync'
@@ -143,6 +144,14 @@ export const router = createBrowserRouter([
     element: (
       <ChildComponent>
         <EchartRef />
+      </ChildComponent>
+    )
+  },
+  {
+    path: '/event',
+    element: (
+      <ChildComponent>
+        <Event />
       </ChildComponent>
     )
   }

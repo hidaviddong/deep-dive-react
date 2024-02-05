@@ -18,7 +18,8 @@ const routes = [
   { path: '/use-layout-effect', label: 'useLayoutEffect' },
   { path: '/virtual-list', label: '虚拟列表' },
   { path: '/forward-ref', label: 'forwardRef' },
-  { path: '/echart-ref', label: 'echart-ref' }
+  { path: '/echart-ref', label: 'echart-ref' },
+  { path: '/event', label: '事件系统' }
 ]
 
 export default function Home() {
