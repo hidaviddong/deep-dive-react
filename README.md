@@ -1,8 +1,5 @@
 # deep dive react
 
-学习《深入浅出react开发指南》的一些demo
-
-
 - [x] 可控性渲染
 - [x] 模拟Babel解析JSX
 - [x] `<Component/>` 和 `Component()`的渲染区别
